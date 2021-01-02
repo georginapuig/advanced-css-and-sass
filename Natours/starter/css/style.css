@@ -48,6 +48,7 @@ body {
 
 .text-box {
   position: absolute;
+  text-align: center;
 
   /* horizontal and vertical align */
   top: 40%;
@@ -58,6 +59,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 60px;
 
   backface-visibility: hidden; /* fix lil shaking animation */
 }
@@ -117,4 +119,29 @@ body {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn-white {
+  color: #777;
+  background-color: #fff;
 }
