@@ -40,17 +40,17 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   text-align: center;
 
@@ -68,7 +68,7 @@ body {
   backface-visibility: hidden; /* fix lil shaking animation */
 }
 
-.heading-primary-main { 
+.heading-primary--main { 
   display: block;
   font-size: 6rem;
   font-weight: 400;
@@ -84,7 +84,7 @@ body {
   */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -158,7 +158,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
-.btn-white {
+.btn--white {
   color: #777;
   background-color: #fff;
 }
@@ -176,7 +176,7 @@ body {
   transition: all .4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
@@ -185,7 +185,7 @@ body {
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   /* animation: animationName duration timingFunction delay */
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards;
