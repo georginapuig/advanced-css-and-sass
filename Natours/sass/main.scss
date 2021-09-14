@@ -1,4 +1,13 @@
-@import 'base/base'; // base folder/file folder
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/uyilities';
+
+@import 'pages/home';
 
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
