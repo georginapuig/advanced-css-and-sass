@@ -5,7 +5,9 @@
 @import 'base/animations';
 @import 'base/base';
 @import 'base/typography';
-@import 'base/uyilities';
+@import 'base/utilities';
+
+@import 'components/buttons';
 
 @import 'pages/home';
 
@@ -74,61 +76,5 @@
     letter-spacing: 1.75rem;
 
     animation: moveInRight 1s ease-out;
-  }
-}
-
-.btn {
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s;
-    position: relative;
-  }
-
-  &:hover {
-    transform: translateY(-.3rem);
-    box-shadow: 0 10px 20px rgba($color-black, .2);
-
-    &::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
-  }
-
-  &:active {
-    transform: translateY(-.1rem);
-    box-shadow: 0 5px 10px rgba($color-black, .2);
-  }
-
-  &--white {
-    color: $color-grey-dark;
-    background-color: $color-white;
-
-    &::after {
-      background-color: $color-white;
-    }
-  }
-
-  &:after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-  }
-
-  &--animated {
-    /* animation: animationName duration timingFunction delay */
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
   }
 }
